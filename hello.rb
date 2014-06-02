@@ -151,5 +151,31 @@ p h.to_a # to array
 # p.to_a.to_h  # to hash ハッシュに変換できるが、Ruby2.1.0からしか使えない
 
 
+# レッスン 12
+
+# %記法
+
+s = "hello"
+p s
+s = %Q(hello) # ()の部分は記号であれば何でも良い %Q!hello! など
+p s
+
+# 特殊記号をそのまま書ける
+s = "hel\"lo" # "を入れるには前に\
+p s
+s = %Q(hel"lo) # そのまま書ける
+p s
+
+# ''と""の違い
+s = 'hel\"lo' 
+p s
+s = %q(hel"lo) # Qをqに
+p s
+
+# 配列
+a = ["a", "b", "c"] # ''の場合は%w
+a = %W(a b c) # ""を減らせるので便利
+p a
+
 
 
