@@ -33,3 +33,20 @@ ADMIN_EMAIL = "hirai@gmail.com"
 # 公式サイトのコアリファレンス(英語)で確認できる (http://www.ruby-doc.org/core-2.0/)
 
 p "hello world".length # 文字列の長さを返してくれるメソッド
+
+
+# レッスン 05
+
+# 数値オブジェクト - Numeric
+x = 10 # 100_000_000 ← アンダーバーは無視される
+y = 20.5
+z = Rational(1, 3) # 1/3r
+# + - * / % **
+p x % 3 # 1
+p x ** 3 # 1000
+p z * 2 # 2/3
+# x = x + 5
+x += 5 # 自己代入
+p x # 15
+p y.round # 四捨五入するメソッド
+
