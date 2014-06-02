@@ -64,3 +64,20 @@ puts y
 puts "hello world" + "hirai"
 puts "hello world" * 5
 # メソッド
+
+
+# レッスン 07
+
+# メソッド !とか?とか
+# ! 破壊的メソッド
+# ? 真偽値を返すメソッド true false
+
+s = "hirai"
+puts s.upcase
+puts s
+puts s.upcase! # 元データを書き換える
+
+p s.empty? # false
+s = ""
+p s.empty? # true
+
