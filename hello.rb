@@ -50,3 +50,17 @@ x += 5 # 自己代入
 p x # 15
 p y.round # 四捨五入するメソッド
 
+
+# レッスン 06
+
+# 文字列オブジェクト
+name = "hirai"
+x = "hel\tlo\n world, #{name}" # 変数展開、特殊文字 (\n \t)
+y = 'hel\tlo\n world, #{name}'
+puts x
+puts y
+
+# + * 文字列の演算
+puts "hello world" + "hirai"
+puts "hello world" * 5
+# メソッド
