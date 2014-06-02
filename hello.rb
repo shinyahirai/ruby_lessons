@@ -21,3 +21,15 @@ p msg
 
 ADMIN_EMAIL = "hirai@gmail.com"
 # ADMIN_EMAIL = "hogehoge"
+
+
+# レッスン04
+
+# データ (オブジェクト)
+# - メソッド (クラスで定義)
+
+# 文字列 - String Class
+
+# 公式サイトのコアリファレンス(英語)で確認できる (http://www.ruby-doc.org/core-2.0/)
+
+p "hello world".length # 文字列の長さを返してくれるメソッド
