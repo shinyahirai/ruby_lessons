@@ -136,4 +136,20 @@ p sales.has_value?(200) # valueがあるかを調べることもできる
 # Hashクラスに定義されているのでコアリファレンスを参照
 
 
+# レッスン 11
+
+# オブジェクトの変換
+a = 10
+b = "5"
+# p a + b # エラー
+p a + b.to_i # to integerの略。数値に変換してくれる
+p a + b.to_f # to float
+p a.to_s + b # to string
+
+h = {hirai: 200, shinya: 300}
+p h.to_a # to array
+# p.to_a.to_h  # to hash ハッシュに変換できるが、Ruby2.1.0からしか使えない
+
+
+
 
