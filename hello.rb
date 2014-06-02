@@ -215,4 +215,32 @@ score = 80
 puts "OK!" if score > 60 # 省略して後に書くこともできる
 
 
+# レッスン 14
+
+=begin
+真偽値と条件演算子
+
+true: それ以外(0 ''を含む)
+false: false nil(オブジェクトが存在しない)
+
+条件演算子
+if 条件
+	a = b
+else
+	a = c
+end
+
+a = 条件 ? b : c
+
+=end
+
+if x # trueが省略されている
+	puts "..."
+end
+
+# b = 10
+# c = 20
+b, c = 10, 20 # 多重代入
+a = b > c ? b : c
+puts a
 
