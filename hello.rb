@@ -178,4 +178,41 @@ a = %W(a b c) # ""を減らせるので便利
 p a
 
 
+# レッスン 13
+
+=begin
+
+条件分岐 if
+
+if 条件
+	真
+else
+	偽
+end
+
+> <
+>= <=
+== !=
+
+&& (AND)
+|| (OR)
+! (NOT)
+
+score > 40 && score < 60
+
+=end
+
+score = 80
+if score > 60
+	puts "OK!"
+elsif score > 40
+	puts "SOSO..."
+else
+	puts "NG!"
+end
+
+score = 80
+puts "OK!" if score > 60 # 省略して後に書くこともできる
+
+
 
