@@ -115,4 +115,25 @@ sales << 100 << 102 # ショートカットコマンドもある
 p sales
 
 
+# レッスン 10
+
+# ハッシュオブジェクト
+# key value
+sales = {"hirai" => 200, "shinya" => 300}
+p sales["hirai"]
+
+sales = {:hirai => 200, :shinya => 300} # はじめにコロン:で文字列を使ったシンボルにすることができる
+p sales[:hirai]
+
+sales = {hirai: 200, shinya: 300} # Ruby1.9系からこの書き方もできるようになった
+p sales[:hirai]
+
+p sales.size # 要素数
+p sales.keys # keyを返す
+p sales.values # valueを返す
+p sales.has_key?(:hirai) # そのkeyがあるかを真偽値で返す
+p sales.has_value?(200) # valueがあるかを調べることもできる
+# Hashクラスに定義されているのでコアリファレンスを参照
+
+
 
