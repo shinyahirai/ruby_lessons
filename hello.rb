@@ -374,7 +374,7 @@ class User # クラス名は必ず大文字から始まる
 		@name = name # @から始まるものはインスタンス変数と呼ばれる 他のメソッドでも使える変数
 	end
 
-	def sayHi
+	def sayHi 
 		puts "hello, my name is #{@name}"
 	end
 end
@@ -388,7 +388,32 @@ bob = User.new("Bob")
 bob.sayHi()
 
 
+# レッスン 20
 
+# クラスメソッド、クラス変数
 
+class User2
 
+	@@count = 0 # クラス変数
+
+	def initialize (name)
+		@name = name # インスタンス変数
+		@@count += 1
+	end
+
+	def sayHi # インスタンスメソッド
+		puts "hello, my name is #{@name}"
+	end
+
+	def User.sayHello # クラスメソッド
+		puts "hello from User class (#{@@count} users)"
+	end
+end
+
+User.sayHello()
+
+tom = User2.new("Tom")
+bob = User2.new("Bob")
+
+User.sayHello() # クラス共通でデータを保持したい場合はクラス変数などを使うと便利
 
