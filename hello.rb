@@ -436,3 +436,60 @@ tom.sayHi()
 bob.sayHi()
 bob.shout()
 
+
+# レッスン 22
+
+# アクセサ getter と setter
+# クラスのインスタンス変数には外部からアクセスできない
+
+class User3
+
+	def initialize(name)
+		@name = name
+	end
+
+	# getter
+	def name
+		@name # returnは省略
+	end
+
+	# setter
+	def setName(newName)
+		@name = newName
+	end
+
+	def sayHi
+		puts "hello!, my name is #{@name}"
+	end
+end
+
+bob = User3.new('Bob')
+bob.sayHi()
+p bob.name
+bob.setName('Tom')
+bob.sayHi()
+
+# アクセサの自動設定
+
+class User4
+
+	def initialize(name)
+		@name = name
+	end
+
+	attr_accessor :name # attr_accessorのあとにインスタンス変数と同名のシンボルを書く
+	attr_reader :name # getterのみ
+	attr_writer :name # setterのみ
+
+	def sayHi
+		puts "hello!, my name is #{@name}"
+	end
+end
+
+bob = User4.new('Bob')
+bob.sayHi()
+p bob.name
+bob.name = 'Tom' # bob.setName('Tom')
+bob.sayHi()
+
+
