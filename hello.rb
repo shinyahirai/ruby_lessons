@@ -405,15 +405,34 @@ class User2
 		puts "hello, my name is #{@name}"
 	end
 
-	def User.sayHello # クラスメソッド
+	def User2.sayHello # クラスメソッド
 		puts "hello from User class (#{@@count} users)"
 	end
 end
 
-User.sayHello()
+User2.sayHello()
 
 tom = User2.new("Tom")
 bob = User2.new("Bob")
 
-User.sayHello() # クラス共通でデータを保持したい場合はクラス変数などを使うと便利
+User2.sayHello() # クラス共通でデータを保持したい場合はクラス変数などを使うと便利
+
+
+# レッスン 21
+
+# クラスの継承
+class SuperUser < User # User クラスを継承する
+
+	def shout
+		puts "HELLO! from #{@name}!" # User クラスで定義した@nameが使える
+	end
+
+end
+
+tom = User.new("Tom")
+bob = SuperUser.new("Bob")
+
+tom.sayHi()
+bob.sayHi()
+bob.shout()
 
