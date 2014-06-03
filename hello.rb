@@ -363,5 +363,32 @@ greet = sayHi()
 puts greet
 
 
+# レッスン 19
+
+# クラス (オブジェクトの設計図)
+# メソッド
+# インスタンス クラスから作られたオブジェクトのこと
+
+class User # クラス名は必ず大文字から始まる
+	def initialize (name) # インスタンスを作るときに必ず実行される初期化処理
+		@name = name # @から始まるものはインスタンス変数と呼ばれる 他のメソッドでも使える変数
+	end
+
+	def sayHi
+		puts "hello, my name is #{@name}"
+	end
+end
+
+# インスタンスの作り方 User.new("Tom")
+tom = User.new("Tom") # tomという変数にUserのインスタンスから作られたオブジェクトを渡す
+tom.sayHi() # メソッドを呼び出す
+
+# 他の変数にも使える
+bob = User.new("Bob")
+bob.sayHi()
+
+
+
+
 
 
