@@ -493,3 +493,26 @@ bob.name = 'Tom' # bob.setName('Tom')
 bob.sayHi()
 
 
+# レッスン 23
+
+# Time
+
+t = Time.now
+
+p t
+p t.year
+p t.month
+
+tt = Time.new(1990, 6, 12, 17, 47, 15)
+
+p tt
+
+# 四則演算
+tt += 10
+p tt
+
+# 好きなフォーマットで出力 リファレンス参照
+ttt = Time.new(1990, 6, 12, 17, 47, 15)
+p ttt.strftime("Updated: %Y-%m-%d")
+
+
