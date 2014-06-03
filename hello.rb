@@ -331,12 +331,36 @@ end
 end
 
 
+# レッスン 18
 
+# 関数的メソッド
 
+# メソッドの自作はdefを使用
+def sayHi
+	puts "hello!"
+end
 
+sayHi() # 呼び出すときは()をつける
 
+def sayHi(name) # オプションを持たせる
+	puts "hello!" + name
+end
+sayHi("Tom")
+sayHi("Bob")
 
+def sayHi(name = "Steve") # 初期値を与える
+	puts "hello!" + name
+end
+sayHi()
 
+def sayHi(name = "Steve")
+	# puts "hello!" + name
+	s = "hello! " + name # このsはメソッド内でのみ有効
+	return s # 返り値を持たせることもできる
+end
+
+greet = sayHi()
+puts greet
 
 
 
