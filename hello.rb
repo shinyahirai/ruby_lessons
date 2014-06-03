@@ -244,3 +244,40 @@ b, c = 10, 20 # 多重代入
 a = b > c ? b : c
 puts a
 
+
+# レッスン 15
+
+=begin
+
+条件分岐 case
+
+caase 比較したいオブジェクト	
+when 値
+	処理
+when 値
+	処理
+else
+	処理
+end
+
+=end
+
+signal = "red"
+
+case signal
+when "red"
+	puts "STOP!"
+when "green", "blue"
+	puts "GO!"
+when "yellow"
+	puts "CAUTION!"
+else
+	puts "wrong signal"
+end
+	
+			
+
+
+
+
+
